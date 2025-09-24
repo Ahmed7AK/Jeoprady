@@ -24,7 +24,7 @@ app.use("/api/clues", cluesRoutes);
 
 
 // This checks the .env file and uses it to broadcast the API on a sepcific port
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 io.on("connection", (socket) => {
     console.log("New user connected:", socket.id);
