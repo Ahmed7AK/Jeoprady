@@ -1,0 +1,66 @@
+body {
+  background-color: var(--blue);
+}
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: float 3s infinite ease-in-out;
+  padding: 100px;
+}
+.title img {
+  width: 600px;
+}
+.title h1 {
+  font-size: 64px;
+  color: var(--white);
+}
+
+@keyframes float {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 0px 20px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+.join-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+}
+.input-field p {
+  font-size: 20px;
+  color: white;
+}
+.input-field input {
+  font-size: 24px;
+  border-radius: 5px;
+  width: 300px;
+}
+#join-room {
+  width: 300px;
+  background-color: var(--orange);
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+}
