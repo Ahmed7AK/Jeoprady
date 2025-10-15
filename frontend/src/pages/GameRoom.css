@@ -1,0 +1,35 @@
+.player-dashboard {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background-color: var(--dblue);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.player {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--orange);
+    padding: 20px;
+}
+
+#start-game {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    margin: 20px;
+    background-color: var(--lblue);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+}

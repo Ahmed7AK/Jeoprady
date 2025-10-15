@@ -4,10 +4,10 @@ import {BrowserRouter} from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 
+// Removed StrictMode as it renders components twice which leads to two socket connections 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>,
+ ,
 )

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './MainPage.css'
 import logo from "../assets/logo.png"
 
@@ -9,9 +10,14 @@ const MainPage = () => {
         roomID: ''
     })
 
+    const navigate = useNavigate(); // Allows for navigation through routes
+
+
+    // Connects to a socket and then clears the form
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(roomData);
+        navigate(`/room/${roomData.roomID}`, {state: roomData}) // Navigates to the room path and sends the roomData to the location
+        setRoomData({username: '', roomID: ''})
     }
     
     return (

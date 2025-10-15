@@ -1,0 +1,48 @@
+.j-table {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100vw;
+    height: 70vh;
+    background-color: black;
+    padding: 30px;
+}
+.j-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid;
+}
+.j-cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 8vw;
+    height: 3vw;
+    font-size: .4vw;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--dblue);
+}
+.j-clue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8vw;
+    height: 3vw;
+    font-size: 1vw;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--dblue);
+}
+.j-clue p {
+    color: gold;
+    font-weight: bold;
+}
